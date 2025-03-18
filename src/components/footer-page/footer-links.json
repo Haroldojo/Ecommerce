@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_footer_page_footer_links",
+  "info": {
+    "displayName": "footerLinks"
+  },
+  "options": {},
+  "attributes": {
+    "mainTitle": {
+      "type": "string"
+    },
+    "bottomlinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.links"
+    }
+  }
+}

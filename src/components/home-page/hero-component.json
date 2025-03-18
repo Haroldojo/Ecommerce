@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_page_hero_components",
+  "info": {
+    "displayName": "heroComponent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heroImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "buyNowButton": {
+      "displayName": "button",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.button"
+    }
+  }
+}
