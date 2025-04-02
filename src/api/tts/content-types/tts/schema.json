@@ -1,0 +1,14 @@
+{
+    "kind": "singleType",
+    "collectionName": "ttses",
+    "info": {
+      "singularName": "tts",
+      "pluralName": "ttses",
+      "displayName": "Text-to-Speech"
+    },
+    "options": {
+      "draftAndPublish": false
+    },
+    "attributes": {}
+  }
+  

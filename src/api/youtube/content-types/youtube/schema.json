@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "youtubes",
+  "info": {
+    "singularName": "youtube",
+    "pluralName": "youtubes",
+    "displayName": "youtube",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "videoUrl": {
+      "type": "text"
+    },
+    "videoId": {
+      "type": "uid",
+      "targetField": "videoUrl"
+    },
+    "views": {
+      "type": "decimal"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "thumbnailLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnailDiscount": {
+      "type": "string"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "productCategory": {
+      "type": "string"
+    },
+    "productComponent": {
+      "displayName": "productComponent",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-component.product-component"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
+    },
+    "productlogos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "productParagraph": {
+      "type": "text"
+    },
+    "SKU": {
+      "displayName": "SKU",
+      "type": "component",
+      "repeatable": true,
+      "component": "sku.sku"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "product"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "additionaInformation": {
+      "type": "richtext"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "products"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product"
+    }
+  }
+}

@@ -15,16 +15,24 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@google-cloud/text-to-speech": "^6.0.1",
     "@strapi/plugin-cloud": "5.11.2",
     "@strapi/plugin-users-permissions": "5.11.2",
     "@strapi/strapi": "5.11.2",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "edge-tts": "^1.0.1",
+    "edge-tts-client": "^1.0.2",
+    "edge-tts-node": "^1.5.7",
+    "edge-tts-nodejs": "^1.0.6",
+    "node-edge-tts": "^1.2.7",
+    "openai": "^4.89.0",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"

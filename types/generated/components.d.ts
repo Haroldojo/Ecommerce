@@ -48,6 +48,32 @@ export interface HomePageHeroComponent extends Struct.ComponentSchema {
   };
 }
 
+export interface ProductComponentProductComponent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_product_component_product_components';
+  info: {
+    displayName: 'productComponent';
+  };
+  attributes: {
+    color: Schema.Attribute.String;
+    Price: Schema.Attribute.String;
+    productSize: Schema.Attribute.Enumeration<['S', 'M', 'L', 'XL']>;
+    stockQuantity: Schema.Attribute.Integer;
+  };
+}
+
+export interface SkuSku extends Struct.ComponentSchema {
+  collectionName: 'components_sku_skus';
+  info: {
+    description: '';
+    displayName: 'SKU';
+  };
+  attributes: {
+    stockunittitle: Schema.Attribute.String;
+    stockunitvalue: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -55,6 +81,8 @@ declare module '@strapi/strapi' {
       'global.button': GlobalButton;
       'global.links': GlobalLinks;
       'home-page.hero-component': HomePageHeroComponent;
+      'product-component.product-component': ProductComponentProductComponent;
+      'sku.sku': SkuSku;
     }
   }
 }
