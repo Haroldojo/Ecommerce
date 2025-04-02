@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sku_skus",
+  "info": {
+    "displayName": "SKU",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stockunittitle": {
+      "type": "string"
+    },
+    "stockunitvalue": {
+      "type": "string"
+    }
+  }
+}

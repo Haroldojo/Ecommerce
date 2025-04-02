@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_product_component_product_components",
+  "info": {
+    "displayName": "productComponent"
+  },
+  "options": {},
+  "attributes": {
+    "Price": {
+      "type": "string"
+    },
+    "productSize": {
+      "type": "enumeration",
+      "enum": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "stockQuantity": {
+      "type": "integer"
+    }
+  }
+}
