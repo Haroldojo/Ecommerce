@@ -424,6 +424,8 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images'>;
+    newsLetterHeading: Schema.Attribute.String;
+    newsLetterPlaceholder: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -463,6 +465,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
 export interface ApiNewsletterNewsletter extends Struct.CollectionTypeSchema {
   collectionName: 'newsletters';
   info: {
+    description: '';
     displayName: 'newsletter';
     pluralName: 'newsletters';
     singularName: 'newsletter';

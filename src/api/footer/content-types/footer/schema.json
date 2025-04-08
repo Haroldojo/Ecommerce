@@ -30,6 +30,12 @@
     },
     "belowFooter": {
       "type": "text"
+    },
+    "newsLetterPlaceholder": {
+      "type": "richtext"
+    },
+    "newsLetterHeading": {
+      "type": "string"
     }
   }
 }
