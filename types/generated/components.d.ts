@@ -25,9 +25,11 @@ export interface GlobalButton extends Struct.ComponentSchema {
 export interface GlobalLinks extends Struct.ComponentSchema {
   collectionName: 'components_global_links';
   info: {
+    description: '';
     displayName: 'links';
   };
   attributes: {
+    openInNewTab: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     slug: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
